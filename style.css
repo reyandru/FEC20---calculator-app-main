@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+*,*::before,*::after{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-main-1);
+  color: var(--text-color-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  background-color: var(--key-bg-1);
+  box-shadow: 0 2px 4px var(--key-shadow-1);
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  font-family: "League Spartan";
+}
+
+.topConts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 90px;
+  color: white;
+  padding: 5px;
+}
+
+.displayConts{
+  width: 500px;
+  height: 110px;
+  background-color: var(--bg-screen-1);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content:right;
+  text-align: right;
+  padding: 15px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.buttonConts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var();
+  width: 500px;
+  height: 420px;
+  padding: 10px;
+}
+
+button{
+  height: 60px;
+  width: 100px;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--text-color-1);
+  background-color: var( --key-bg-2-1);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 1px 0 var(--key-shadow-2-1);
+}
+
+.reset, .equal{
+ color: white;
+ width: 230px;
+ border: none;
+}
+
+.equal{
+  background-color: var(--key-bg-toggle-1);
+  box-shadow: 0 3px 1px 0 var(--key-shadow-toggle-1);
+}
+
+.reset, .del{
+  color: white;
+  background-color: var(--key-bg-1);
+  font-size:24px;
+  box-shadow: 0 4px 1px 0 var(--key-shadow-1);
+  outline: none;
+  border: none;
+ }
+
+ button:active{
+  transform: scale(0.90);
+ }
+
+:root {
+  /* Theme 1 */
+  --bg-main-1: hsl(222, 26%, 31%);
+  --bg-toggle-1: hsl(223, 31%, 20%);
+  --bg-screen-1: hsl(224, 36%, 15%);
+
+  --key-bg-1: hsl(225, 21%, 49%);
+  --key-shadow-1: hsl(224, 28%, 35%);
+  
+  --key-bg-toggle-1: hsl(6, 63%, 50%);
+  --key-shadow-toggle-1: hsl(6, 70%, 34%);
+  
+  --key-bg-2-1: hsl(30, 25%, 89%);
+  --key-shadow-2-1: hsl(28, 16%, 65%);
+  
+  --text-color-1: hsl(221, 14%, 31%);
+  --text-white: hsl(0, 0%, 100%);
+  
+  /* Theme 2 */
+  --bg-main-2: hsl(0, 0%, 90%);
+  --bg-toggle-2: hsl(0, 5%, 81%);
+  --bg-screen-2: hsl(0, 0%, 93%);
+
+  --key-bg-2: hsl(185, 42%, 37%);
+  --key-shadow-2: hsl(185, 58%, 25%);
+  
+  --key-bg-toggle-2: hsl(25, 98%, 40%);
+  --key-shadow-toggle-2: hsl(25, 99%, 27%);
+  
+  --key-bg-2-2: hsl(45, 7%, 89%);
+  --key-shadow-2-2: hsl(35, 11%, 61%);
+  
+  --text-color-2: hsl(60, 10%, 19%);
+  
+  /* Theme 3 */
+  --bg-main-3: hsl(268, 75%, 9%);
+  --bg-toggle-3: hsl(268, 71%, 12%);
+  --bg-screen-3: hsl(268, 71%, 12%);
+  
+  --key-bg-3: hsl(281, 89%, 26%);
+  --key-shadow-3: hsl(285, 91%, 52%);
+  
+  --key-bg-toggle-3: hsl(176, 100%, 44%);
+  --key-shadow-toggle-3: hsl(177, 92%, 70%);
+  
+  --key-bg-3-2: hsl(268, 47%, 21%);
+  --key-shadow-3-2: hsl(290, 70%, 36%);
+  
+  --text-color-3: hsl(52, 100%, 62%);
+  --text-dark-blue-3: hsl(198, 20%, 13%);
+}
+
+
